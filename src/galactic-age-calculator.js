@@ -20,18 +20,34 @@ export class GalacticAge {
     let planetLifeExpect;
     let surpassedLifeExpect;
 
-    if (planet === 'mercury') {
-      planetLifeExpect = parseFloat(((this.lifeExpect - this.earthAge) * 0.24).toFixed(3))
+    if (this.lifeExpect - this.earthAge >= 0) {
+      if (planet === 'mercury') {
+        planetLifeExpect = parseFloat(((this.lifeExpect - this.earthAge) * 0.24).toFixed(3))
+      }
+      else if (planet === 'venus') {
+        planetLifeExpect = parseFloat(((this.lifeExpect - this.earthAge) * 0.62).toFixed(3))
+      }
+      else if (planet === 'mars') {
+        planetLifeExpect = parseFloat(((this.lifeExpect - this.earthAge) * 1.88).toFixed(3))
+      }
+      else if (planet === 'jupiter') {
+        planetLifeExpect = parseFloat(((this.lifeExpect - this.earthAge) * 11.86).toFixed(3))
+      };
     }
-    else if (planet === 'venus') {
-      planetLifeExpect = parseFloat(((this.lifeExpect - this.earthAge) * 0.62).toFixed(3))
+    else {
+      if (planet === 'mercury') {
+        planetLifeExpect = " "
+      }
+      else if (planet === 'venus') {
+        planetLifeExpect = " "
+      }
+      else if (planet === 'mars') {
+        planetLifeExpect = " "
+      }
+      else if (planet === 'jupiter') {
+        planetLifeExpect = " "
+      };
     }
-    else if (planet === 'mars') {
-      planetLifeExpect = parseFloat(((this.lifeExpect - this.earthAge) * 1.88).toFixed(3))
-    }
-    else if (planet === 'jupiter') {
-      planetLifeExpect = parseFloat(((this.lifeExpect - this.earthAge) * 11.86).toFixed(3))
-    };
     return planetLifeExpect;
   }
 }

@@ -42,4 +42,13 @@ describe('GalacticAge', () => {
     expect(reusableHuman.yearsLeft('mars')).toEqual(116.748);
     expect(reusableHuman.yearsLeft('jupiter')).toEqual(736.506);
   });
+
+  test('Should correctly return the number of years a user has lived beyond their average life expectancy based on average life expectancy in earth years', () => {
+    let elderlyHuman = new GalacticAge(90, 0, 0, 0, 0, 87.1);
+
+    expect(elderlyHuman.yearsLeft('mercury')).toEqual("Congratulations! You have exceeded your life expecancy by 0.696 mercury years.")
+    expect(elderlyHuman.yearsLeft('venus')).toEqual("Congratulations! You have exceeded your life expecancy by 1.798 venus years.")
+    expect(elderlyHuman.yearsLeft('mars')).toEqual("Congratulations! You have exceeded your life expecancy by 5.452 mars years.")
+    expect(elderlyHuman.yearsLeft('jupiter')).toEqual("Congratulations! You have exceeded your life expecancy by 34.394 jupiter years.")
+  })
 })
