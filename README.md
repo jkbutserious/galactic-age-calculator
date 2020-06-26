@@ -10,9 +10,29 @@ _DETAILED DESCRIPTION_
 
 ## Specs
 
-1. OBJECTIVE
-Sample Input: 
-Sample Output: 
+1. The program should calculate a user's age in Mercury years based on their age in Earth years
+Sample Input: 20 Earth years
+Sample Output: 4.8 Mercury years
+
+2. The program should calculate a user's age in Venus years based on their age in Earth years
+Sample Input: 20 Earth years
+Sample Output: 12.4 Venus years
+
+3. The program should calculate a user's age in Mars years based on their age in Earth years
+Sample Input: 20 Earth years
+Sample Output: 37.6 Mars years
+
+4. The program should calculate a user's age in Jupiter years based on their age in Earth years
+Sample Input: 20 Earth years
+Sample Output: 237.2 Mercury years
+
+5. The program should calcuate how many years a person has left to live based on their average life expectancy on Earth
+Sample Input: 20 Earth years
+Sample Output: You have 141 years left to live on Mars
+
+6. The program should recognize users who have surpassed their average life expectancy and return the number of years they have lived beyond the average on each planet
+Sample Input: 96 Earth years (where 95 Earth years is the average life expectancy)
+Sample Output: Congratulations! You have lived 0.62 years beyond the average.
 
 ## Setup/Installation Requirements
 
