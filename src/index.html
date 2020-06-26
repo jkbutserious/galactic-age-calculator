@@ -14,6 +14,10 @@
           <label for="user-name">Please enter your name:</label>
           <input id="user-name" class="form-control" type="text">
         </div>
+        <div class="form-group">
+          <label for="user-age">Please enter your age in earth years:</label>
+          <input id="user-age" class="form-control" type="number">
+        </div>
         <div>
           <label>Are you male or female?</label>
           <div class="radio">
@@ -49,30 +53,33 @@
         <div class="radio">
           <label>
             <input type="radio" name="user-exercise" value="yes" checked>
-            Male
+            Yes
           </label>
         </div>
         <div class="radio">
           <label>
             <input type="radio" name="user-exercise" value="no">
-            Male
+            No
           </label>
         </div>
        </div>
+       <button type="submit" class="btn">Submit</button>
       </form>
     </div>
     <div id="output">
+      <h2><span id="user-name-output"></span></h2>
       <h3>Your age on Mercury is: <span id="mercury-age"></span></h3>
       <h3>Your age on Venus is: <span id="venus-age"></span></h3>
       <h3>Your age on Mars is: <span id="mars-age"></span></h3>
       <h3>Your age on Jupiter is: <span id="jupiter-age"></span></h3>
-      <h3>Your average life expectancy is:</h3>
+      <h3>Your average life expectancy is <span id="earth-expect"></span></h3>
+      <h3></h3>
         <ul>
-          <li><span id="earth-expect"></span></li>
-          <li><span id="mercury-expect"></span></li>
-          <li><span id="venus-expect"></span></li>
-          <li><span id="mars-expect"></span></li>
-          <li><span id="jupiter-expect"></span></li>
+          <li><span id="earth-years-left"></span></li>
+          <li><span id="mercury-years-left"></span></li>
+          <li><span id="venus-years-left"></span></li>
+          <li><span id="mars-years-left"></span></li>
+          <li><span id="jupiter-years-left"></span></li>
         </ul>
         <h3><span id="years-left"></span></h3>
     </div>

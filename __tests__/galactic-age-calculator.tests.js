@@ -1,4 +1,4 @@
-import { GalacticAge, calculateAge, calculateLifeExpect, yearsLeft } from './../src/galactic-age-calculator.js'
+import { GalacticAge } from './../src/galactic-age-calculator.js'
 
 describe('GalacticAge', () => {
   let reusableHuman;
@@ -37,12 +37,12 @@ describe('GalacticAge', () => {
   });
   
   test('Should correctly calculate the user life expectancy in earth years based on their sex, smoking habits, and exercise habits', () => {
-    reusableHuman.calculateLifeExpect('male', true, true);
+    reusableHuman.calculateLifeExpect('male', 'yes', 'yes');
     expect(reusableHuman.lifeExpect).toBe(68.1)
   });
 
   test('Should correctly calculate the number of years a user has left on each planet based on average life expectancy in Earth years', () => {
-    reusableHuman.calculateLifeExpect('male', true, true);
+    reusableHuman.calculateLifeExpect('male', 'yes', 'yes');
     expect(reusableHuman.yearsLeft('mercury')).toEqual(10.344);
     expect(reusableHuman.yearsLeft('venus')).toEqual(26.722);
     expect(reusableHuman.yearsLeft('mars')).toEqual(81.028);
