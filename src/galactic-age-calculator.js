@@ -8,4 +8,9 @@ export class GalacticAge {
     this.jupAge = jupAge;
     this.lifeExpect = lifeExpect;
   }
+
+  calculateAge() {
+    this.mercAge = 0;
+    return this.GalacticAge;
+  }
 }

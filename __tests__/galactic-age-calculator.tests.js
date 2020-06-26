@@ -1,4 +1,4 @@
-import { GalacticAge } from './../src/galactic-age-calculator.js'
+import { GalacticAge, calculateAge } from './../src/galactic-age-calculator.js'
 
 describe('GalacticAge', () => {
   let reusableHuman;
@@ -14,5 +14,10 @@ describe('GalacticAge', () => {
     expect(reusableHuman.marsAge).toBe(0);
     expect(reusableHuman.jupAge).toBe(0);
     expect(reusableHuman.lifeExpect).toBe(0);
+  });
+
+  test('Should correctly calculate the user age in Mercury years based on their age in Earth years', () => {
+    reusableHuman.calculateAge();
+    expect(reusableHuman.mercAge).toEqual(6);
   })
 })
