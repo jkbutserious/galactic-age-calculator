@@ -17,20 +17,20 @@ export class GalacticAge {
   }
 
   yearsLeft(planet) {
-    const earthLifeExpect = 87.1;
     let planetLifeExpect;
+    let surpassedLifeExpect;
 
     if (planet === 'mercury') {
-      planetLifeExpect = parseFloat(((earthLifeExpect - this.earthAge) * 0.24).toFixed(3))
+      planetLifeExpect = parseFloat(((this.lifeExpect - this.earthAge) * 0.24).toFixed(3))
     }
     else if (planet === 'venus') {
-      planetLifeExpect = parseFloat(((earthLifeExpect - this.earthAge) * 0.62).toFixed(3))
+      planetLifeExpect = parseFloat(((this.lifeExpect - this.earthAge) * 0.62).toFixed(3))
     }
     else if (planet === 'mars') {
-      planetLifeExpect = parseFloat(((earthLifeExpect - this.earthAge) * 1.88).toFixed(3))
+      planetLifeExpect = parseFloat(((this.lifeExpect - this.earthAge) * 1.88).toFixed(3))
     }
     else if (planet === 'jupiter') {
-      planetLifeExpect = parseFloat(((earthLifeExpect - this.earthAge) * 11.86).toFixed(3))
+      planetLifeExpect = parseFloat(((this.lifeExpect - this.earthAge) * 11.86).toFixed(3))
     };
     return planetLifeExpect;
   }

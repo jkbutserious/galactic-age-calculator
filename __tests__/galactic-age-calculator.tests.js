@@ -4,7 +4,7 @@ describe('GalacticAge', () => {
   let reusableHuman;
 
   beforeEach(() => {
-    reusableHuman = new GalacticAge(25, 0, 0, 0, 0, 0);
+    reusableHuman = new GalacticAge(25, 0, 0, 0, 0, 87.1);
   });
 
   test('Should correctly create a Galactic Age object for a user that contains their age in Earth years and has props for their age in other planetary years and life expectancy', () => {
@@ -13,7 +13,7 @@ describe('GalacticAge', () => {
     expect(reusableHuman.venAge).toBe(0);
     expect(reusableHuman.marsAge).toBe(0);
     expect(reusableHuman.jupAge).toBe(0);
-    expect(reusableHuman.lifeExpect).toBe(0);
+    expect(reusableHuman.lifeExpect).toBe(87.1);
   });
 
   test('Should correctly calculate the user age in Mercury years based on their age in Earth years', () => {
