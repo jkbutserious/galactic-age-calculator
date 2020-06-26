@@ -18,6 +18,11 @@ describe('GalacticAge', () => {
 
   test('Should correctly calculate the user age in Mercury years based on their age in Earth years', () => {
     reusableHuman.calculateAge();
-    expect(reusableHuman.mercAge).toEqual(6);
+    expect(reusableHuman.mercAge).toBe(6);
+  })
+
+  test('Should correctly calculate the user age in Venus years based on their age in Earth years', () => {
+    reusableHuman.calculateAge();
+    expect(reusableHuman.venAge).toBe(15.5);
   })
 })
