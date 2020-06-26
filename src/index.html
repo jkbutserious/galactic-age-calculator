@@ -8,7 +8,74 @@
 
 <body>
   <div class="container">
-    
+    <div>
+      <form id="galactic-id">
+        <div class="form-group">
+          <label for="user-name">Please enter your name:</label>
+          <input id="user-name" class="form-control" type="text">
+        </div>
+        <div>
+          <label>Are you male or female?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="user-sex" value="male" checked>
+              Male
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="user-sex" value="female">
+              Female
+            </label>
+          </div>
+       </div>
+       <div>
+         <label>Do you smoke?</label>
+         <div class="radio">
+          <label>
+            <input type="radio" name="user-smoking" value="yes" checked>
+            Yes
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="user-smoking" value="no">
+            No
+          </label>
+        </div>
+       </div>
+       <div>
+        <label>Do you exercise at least 75 minutes per week?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="user-exercise" value="yes" checked>
+            Male
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="user-exercise" value="no">
+            Male
+          </label>
+        </div>
+       </div>
+      </form>
+    </div>
+    <div id="output">
+      <h3>Your age on Mercury is: <span id="mercury-age"></span></h3>
+      <h3>Your age on Venus is: <span id="venus-age"></span></h3>
+      <h3>Your age on Mars is: <span id="mars-age"></span></h3>
+      <h3>Your age on Jupiter is: <span id="jupiter-age"></span></h3>
+      <h3>Your average life expectancy is:</h3>
+        <ul>
+          <li><span id="earth-expect"></span></li>
+          <li><span id="mercury-expect"></span></li>
+          <li><span id="venus-expect"></span></li>
+          <li><span id="mars-expect"></span></li>
+          <li><span id="jupiter-expect"></span></li>
+        </ul>
+        <h3><span id="years-left"></span></h3>
+    </div>
   </div>
 </body>
 
