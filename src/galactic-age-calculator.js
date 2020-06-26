@@ -15,4 +15,23 @@ export class GalacticAge {
     this.marsAge = this.earthAge * 1.88;
     this.jupAge = this.earthAge * 11.86;
   }
+
+  yearsLeft(planet) {
+    const earthLifeExpect = 87.1;
+    let planetLifeExpect;
+
+    if (planet === 'mercury') {
+      planetLifeExpect = 0
+    }
+    else if (planet = 'venus') {
+      planetLifeExpect = 0
+    }
+    else if (planet = 'mars') {
+      planetLifeExpect = 0
+    }
+    else if (planet = 'jupiter') {
+      planetLifeExpect = 0
+    };
+    return planetLifeExpect;
+  }
 }
