@@ -16,7 +16,39 @@ export class GalacticAge {
     this.jupAge = this.earthAge * 11.86;
   }
 
-  yearsLeft(planet) {
+  calculateLifeExpect(sex, smoking, exercise) {
+    let lifeYears;
+    if (sex === 'male') {
+      lifeYears = 76.3;
+
+      if (smoking === true && exercise === false) {
+        lifeYears -= 10;
+      }
+      else if (smoking === false && exercise === true) {
+        lifeYears += 1.8;
+      }
+      else if (smoking === true && exercise === true) {
+        lifeYears -= 8.2;
+      }
+    }
+    else {
+      lifeYears = 81.4;
+
+      if (smoking === true && exercise === false) {
+        lifeYears -= 10;
+      }
+      else if (smoking === false && exercise === true) {
+        lifeYears += 1.8;
+      }
+      else if (smoking === true && exercise === true) {
+        lifeYears -= 8.2;
+      }
+    }
+
+    this.lifeExpect = lifeYears;
+  }
+
+   yearsLeft(planet) {
     let planetLifeExpect;
     let surpassedLifeExpect;
 
