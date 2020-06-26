@@ -10,7 +10,7 @@ export class GalacticAge {
   }
 
   calculateAge() {
-    this.mercAge = 0;
+    this.mercAge = this.earthAge * 0.24;
     return this.GalacticAge;
   }
 }
