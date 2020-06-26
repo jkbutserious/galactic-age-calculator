@@ -13,5 +13,6 @@ export class GalacticAge {
     this.mercAge = this.earthAge * 0.24;
     this.venAge = this.earthAge * 0.62;
     this.marsAge = this.earthAge * 1.88;
+    this.jupAge = 0;
   }
 }

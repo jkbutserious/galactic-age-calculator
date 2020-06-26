@@ -30,4 +30,9 @@ describe('GalacticAge', () => {
     reusableHuman.calculateAge();
     expect(reusableHuman.marsAge).toBe(47);
   })
+
+  test('Should correctly calculate the user age in Jupiter years based on their age in Earth years', () => {
+    reusableHuman.calculateAge();
+    expect(reusableHuman.jupAge).toBe(296.5);
+  })
 })
