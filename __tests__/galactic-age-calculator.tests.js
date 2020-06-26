@@ -25,4 +25,9 @@ describe('GalacticAge', () => {
     reusableHuman.calculateAge();
     expect(reusableHuman.venAge).toBe(15.5);
   })
+  
+  test('Should correctly calculate the user age in Mars years based on their age in Earth years', () => {
+    reusableHuman.calculateAge();
+    expect(reusableHuman.marsAge).toBe(47);
+  })
 })
