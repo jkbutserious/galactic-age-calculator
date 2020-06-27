@@ -67,16 +67,16 @@ export class GalacticAge {
     }
     else {
       if (planet === 'mercury') {
-        planetLifeExpect = "Congratulations! You have exceeded your life expecancy by " + parseFloat(((this.lifeExpect - this.earthAge) * 0.24 * -1).toFixed(3)) + " " + planet + " years.";
+        planetLifeExpect = "Congratulations! You have exceeded your life expecancy by `${parseFloat(((this.lifeExpect - this.earthAge) * 0.24 * -1).toFixed(3))} `${planet} years.";
       }
       else if (planet === 'venus') {
-        planetLifeExpect = "Congratulations! You have exceeded your life expecancy by " + parseFloat(((this.lifeExpect - this.earthAge) * 0.62 * -1).toFixed(3)) + " " + planet + " years.";
+        planetLifeExpect = "Congratulations! You have exceeded your life expecancy by `${parseFloat(((this.lifeExpect - this.earthAge) * 0.62 * -1).toFixed(3))}  `${planet} years.";
       }
       else if (planet === 'mars') {
-        planetLifeExpect = "Congratulations! You have exceeded your life expecancy by " + parseFloat(((this.lifeExpect - this.earthAge) * 1.88 * -1).toFixed(3)) + " " + planet + " years.";
+        planetLifeExpect = "Congratulations! You have exceeded your life expecancy by `${parseFloat(((this.lifeExpect - this.earthAge) * 1.88 * -1).toFixed(3))} `${planet} years.";
       }
       else if (planet === 'jupiter') {
-        planetLifeExpect = "Congratulations! You have exceeded your life expecancy by " + parseFloat(((this.lifeExpect - this.earthAge) * 11.86 * -1).toFixed(3)) + " " + planet + " years.";
+        planetLifeExpect = "Congratulations! You have exceeded your life expecancy by `${parseFloat(((this.lifeExpect - this.earthAge) * 11.86 * -1).toFixed(3))} `${planet} years.";
       }
     }
     return planetLifeExpect;
